@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feature 4-Smart Filter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Smart Filter Example</h1>
+
+  <div class="filters">
+    <input type="text" id="searchBar" placeholder="Search by name..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="web">Web Apps</option>
+      <option value="mobile">Mobile Apps</option>
+      <option value="design">UI Designs</option>
+    </select>
+    <input type="number" id="minPrice" placeholder="Min Price" />
+    <input type="number" id="maxPrice" placeholder="Max Price" />
+  </div>
+
+  <div class="grid" id="projectGrid">
+    <div class="card" data-name="Portfolio Website" data-category="web" data-price="200">
+      <h3>Portfolio Website</h3>
+      <p class="price">₹200</p>
+    </div>
+    <div class="card" data-name="E-Commerce Store" data-category="web" data-price="500">
+      <h3>E-Commerce Store</h3>
+      <p class="price">₹500</p>
+    </div>
+    <div class="card" data-name="Chat Application" data-category="mobile" data-price="300">
+      <h3>Chat Application</h3>
+      <p class="price">₹300</p>
+    </div>
+    <div class="card" data-name="Task Manager App" data-category="mobile" data-price="150">
+      <h3>Task Manager App</h3>
+      <p class="price">₹150</p>
+    </div>
+    <div class="card" data-name="UI Dashboard Design" data-category="design" data-price="100">
+      <h3>UI Dashboard Design</h3>
+      <p class="price">₹100</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
