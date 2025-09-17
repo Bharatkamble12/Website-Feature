@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e74c3c;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 15px 25px;
+    font-size: 20px;
+    border: 3px solid #e74c3c;
+    border-radius: 25px;
+    outline: none;
+    background: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+    transition: all 0.4s ease;
+}
+
+#searchBar:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 20px rgba(192, 57, 43, 0.6);
+    background: #2c3e50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+ul li {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    padding: 20px 25px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 2px solid #e74c3c;
+}
+
+ul li:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.hidden {
+    display: none;
+}
