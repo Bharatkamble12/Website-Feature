@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feature 5-Modal Pop-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Modal Popups Example</h1>
+
+  <!-- Trigger Buttons -->
+  <button onclick="openModal('loginModal')">Open Login Modal</button>
+  <button onclick="openModal('alertModal')">Open Alert Modal</button>
+  <button onclick="openModal('previewModal')">Open Preview Modal</button>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h2>Login</h2>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+  </div>
+
+  <!-- Alert Modal -->
+  <div class="modal" id="alertModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('alertModal')">&times;</span>
+      <h2>⚠ Alert</h2>
+      <p>This is an alert message!</p>
+      <button onclick="closeModal('alertModal')">OK</button>
+    </div>
+  </div>
+
+  <!-- Preview Modal -->
+  <div class="modal" id="previewModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('previewModal')">&times;</span>
+      <h2>Project Preview</h2>
+      <p>Here’s a preview of your project details.</p>
+      <img src="https://via.placeholder.com/300" alt="Preview" style="max-width:100%; border-radius: 5px;">
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
