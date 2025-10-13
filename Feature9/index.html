@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Form (Fill & Print)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="examForm" class="pdf-layout">
+    <h2>Savitribai Phule Pune University</h2>
+    <h3>Examination Form - Winter Session 2025</h3>
+
+    <div class="section box">
+      <h3>Personal Details</h3>
+      <table>
+        <tr><td>Name:</td><td><input type="text" id="name" placeholder="Enter your name"></td></tr>
+        <tr><td>Mother’s Name:</td><td><input type="text" id="mother" placeholder="Enter mother's name"></td></tr>
+        <tr><td>Email:</td><td><input type="email" id="email" placeholder="Enter email"></td></tr>
+        <tr><td>Contact No:</td><td><input type="number" id="contact" placeholder="Enter number"></td></tr>
+        <tr><td>PRN:</td><td><input type="text" id="prn" placeholder="Enter PRN"></td></tr>
+        <tr><td>Total Fee:</td><td><input type="number" id="fee" placeholder="Enter fee amount"></td></tr>
+      </table>
+    </div>
+
+    <div class="section box">
+      <h3>Fee Details</h3>
+      <table>
+        <tr><td>Form Fee</td><td><input type="number" value="40"></td></tr>
+        <tr><td>Exam Fee</td><td><input type="number" value="475"></td></tr>
+        <tr><td>CAP Fee</td><td><input type="number" value="700"></td></tr>
+        <tr><td>Statement of Marks</td><td><input type="number" value="175"></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <button id="downloadBtn">Download PDF</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
