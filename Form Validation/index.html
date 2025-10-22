@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h2>Create account</h2>
+    <form action="#" id="signupForm"
+    novalidate>
+<label for="username">Username</label>
+<input type="text" id="username" required>
+<small>Error: Username is Required</small>
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+<small>Error: Email is required</small>
+
+
+<label for="password">Password</label>
+<input type="password" id="password" required>
+<small>Error: Minimum 6 characters required</small>
+
+<label for="confirmPassword">Confirm Password</label>
+<input type="password" id="confirmPassword" required>
+<small>Error: Password does not match</small>
+
+<button type="submit">Register</button>
+
+
+
+
+
+
+
+
+
+
+</form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

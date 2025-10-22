@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>File Upload with Preview</title>
+</head>
+<body>
+    
+
+    <div class="upload-container">
+
+        <h2>File Upload with Preview (All Types)</h2>
+        <div class="drop-zone" id="dropZone">
+            <p>Drag & Drop Files here or <strong>Click To Upload</strong></p>
+        <input type="file" id="fileInput" multiple>
+        </div>
+    </div>
+
+    <div class="preview" id="preview">
+        <button class="upload-btn" id="uploadBtn">Upload Files</button>
+        <div class="file-info" id="fileInfo"></div>
+        <div id="imagePreview"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

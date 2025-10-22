@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPPU Examination Form - Winter Session 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex flex-col items-center p-6 font-sans">
+  <div id="examForm" class="w-full max-w-4xl bg-white rounded-xl shadow-xl p-8 border border-gray-200">
+    <!-- University Header -->
+    <div class="text-center mb-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-6 rounded-lg">
+      <h1 class="text-3xl font-bold mb-2">Savitribai Phule Pune University</h1>
+      <h2 class="text-xl">Examination Form - Winter Session 2025</h2>
+    </div>
+
+    <!-- Personal Details -->
+    <div class="mb-6 bg-gray-50 rounded-lg p-6 border border-gray-200">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Personal Details</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Mother’s Name</label>
+          <input type="text" id="mother" placeholder="Enter mother's name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" id="email" placeholder="Enter email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Contact No</label>
+          <input type="number" id="contact" placeholder="Enter contact number" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">PRN</label>
+          <input type="text" id="prn" placeholder="Enter PRN" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">College Name</label>
+          <input type="text" id="college" placeholder="Enter college name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Course</label>
+          <input type="text" id="course" placeholder="Enter course" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Semester</label>
+          <input type="text" id="semester" placeholder="Enter semester" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+      </div>
+    </div>
+
+    <!-- Subjects Enrolled -->
+    <div class="mb-6 bg-gray-50 rounded-lg p-6 border border-gray-200">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Subjects Enrolled</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="border border-gray-300 px-4 py-2 text-left font-semibold">Subject Code</th>
+              <th class="border border-gray-300 px-4 py-2 text-left font-semibold">Subject Name</th>
+              <th class="border border-gray-300 px-4 py-2 text-left font-semibold">Credits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2"><input type="text" placeholder="Code" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+              <td class="border border-gray-300 px-4 py-2"><input type="text" placeholder="Name" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+              <td class="border border-gray-300 px-4 py-2"><input type="number" placeholder="Credits" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2"><input type="text" placeholder="Code" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+              <td class="border border-gray-300 px-4 py-2"><input type="text" placeholder="Name" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+              <td class="border border-gray-300 px-4 py-2"><input type="number" placeholder="Credits" class="w-full px-2 py-1 border border-gray-200 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Fee Details -->
+    <div class="mb-6 bg-gray-50 rounded-lg p-6 border border-gray-200">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Fee Details</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Form Fee</label>
+          <input type="number" id="formFee" value="40" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Exam Fee</label>
+          <input type="number" id="examFee" value="475" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">CAP Fee</label>
+          <input type="number" id="capFee" value="700" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Statement of Marks</label>
+          <input type="number" id="marksFee" value="175" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Total Fee</label>
+          <input type="number" id="totalFee" placeholder="Auto-calculated" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-100" readonly>
+        </div>
+      </div>
+    </div>
+
+    <!-- Declaration -->
+    <div class="mb-6 bg-gray-50 rounded-lg p-6 border border-gray-200">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Declaration</h3>
+      <p class="text-sm text-gray-600 mb-6">I hereby declare that the information provided above is true and correct to the best of my knowledge. I understand that any false information may lead to disqualification.</p>
+      <div class="flex flex-col md:flex-row justify-between gap-4">
+        <div class="flex-1">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+          <input type="date" id="date" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+        <div class="flex-1">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Signature</label>
+          <input type="text" placeholder="Type your signature" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="downloadBtn" class="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200 font-semibold">Download PDF</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
