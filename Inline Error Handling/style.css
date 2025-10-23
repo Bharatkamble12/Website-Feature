@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ca5050ee;
+    margin: 0;
+}
+.container{
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 15px;
+}
+.form-group{
+    margin-bottom: 15px;
+    position: relative;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+input:focus{
+    border-color: #4f46e5;
+}
+small{
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+    color: red;
+    visibility: hidden;
+
+}
+.form-group.success input{
+    border-color: #22c55e;
+
+}
+.form-group.error input{
+border-color: #ef4444;
+
+}
+.form-group.success small{
+    color: #22c55e;
+    visibility: visible;
+
+}
+.form-group.error{
+    visibility: visible;
+
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover{
+    background: #4338ca;
+
+}#msg{
+    text-align: center;
+    margin-top:10px ;
+    font-weight: 600;
+}
