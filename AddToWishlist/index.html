@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add To Cart -WishList</title>
+</head>
+<body>
+    <header>
+        <h1>My Products Store</h1>
+        <div class="icons">
+            <div class="icon wishlist-icon" onclick="toggleWishlistView()">Wishlist: <span id="wishlist-count">0</span></div>
+            <div class="icon cart-icon" onclick="toggleCartView()">Cart: <span id="cart-count">0</span></div>
+        </div>
+    </header>
+    <main class="product-container">
+    <!-- Product 1 -->
+    <div class="product-card" data-id="1">
+      <img src="images/portfolio.png" alt="Product 1">
+      <h3>Portfolio Website</h3>
+      <p>Modern responsive portfolio site.</p>
+      <div class="actions">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">Add to Wishlist</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card" data-id="2">
+      <img src="images/blog.png" alt="Product 2">
+      <h3>Blog Website</h3>
+      <p>Simple blog with CMS integration.</p>
+      <div class="actions">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">Add to Wishlist</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card" data-id="3">
+      <img src="images/e-commerce.png" alt="Product 3">
+      <h3>E-Commerce Template</h3>
+      <p>Full store layout with product grid.</p>
+      <div class="actions">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="wish-btn">Add to Wishlist</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart View -->
+  <div id="cart-view" class="view-section hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button id="clear-cart" class="clear-btn">Clear Cart</button>
+  </div>
+
+  <!-- Wishlist View -->
+  <div id="wishlist-view" class="view-section hidden">
+    <h2>Your Wishlist</h2>
+    <div id="wishlist-items"></div>
+    <button id="clear-wishlist" class="clear-btn">Clear Wishlist</button>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
