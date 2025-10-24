@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Sorting + Filtering</title>
+</head>
+<body class="bg-[#0D0D0D] font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-[#FFFFFF] mb-8">Smart Product Filtering and Sorting</h1>
+        <div class="flex flex-col lg:flex-row gap-8">
+            <div class="filters bg-[#1F1F1F] p-6 rounded-lg shadow-md lg:w-1/4">
+                <h3 class="text-xl font-semibold text-[#FFFFFF] mb-4">Search</h3>
+                <input type="text" id="serchInput" placeholder="Search By Name" class="w-full px-3 py-2 border border-[#BFA181] rounded-md focus:outline-none focus:ring-2 focus:ring-[#BFA181] mb-6 bg-[#0D0D0D] text-[#FFFFFF]">
+
+                <h3 class="text-xl font-semibold text-[#FFFFFF] mb-4">Category</h3>
+                <select id="categoryFilter" class="w-full px-3 py-2 border border-[#BFA181] rounded-md focus:outline-none focus:ring-2 focus:ring-[#BFA181] mb-6 bg-[#0D0D0D] text-[#FFFFFF]">
+                    <option value="all">All</option>
+                    <option value="web">Web</option>
+                    <option value="design">Design</option>
+                    <option value="ai">AI</option>
+                </select>
+
+                <h3 class="text-xl font-semibold text-[#FFFFFF] mb-4">Price Range</h3>
+                <input type="range" min="0" max="200" value="200" id="priceRange" class="w-full mb-2">
+                <p class="text-[#EAD7C3]">Max price: <span id="priceValue" class="font-semibold text-[#FFFFFF]">200</span></p>
+
+                <h3 class="text-xl font-semibold text-[#FFFFFF] mb-4 mt-6">Sort By</h3>
+                <select id="sortFilter" class="w-full px-3 py-2 border border-[#BFA181] rounded-md focus:outline-none focus:ring-2 focus:ring-[#BFA181] bg-[#0D0D0D] text-[#FFFFFF]">
+                    <option value="">Default</option>
+                    <option value="low-high">Price: Low-High</option>
+                    <option value="high-low">Price: High-Low</option>
+                    <option value="a-z">Name: A-Z</option>
+                    <option value="z-a">Name: Z-A</option>
+                </select>
+            </div>
+            <div class="products lg:w-3/4" id="productList">
+                <!-- Products will be rendered here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
