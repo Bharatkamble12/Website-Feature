@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password + OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password + OTP Verification</h2>
+        <div id="step-1" class="step active">
+            <input type="email" placeholder="Enter your email" required id="email">
+            <button id="sendOtpBtn">Send OTP</button>
+        </div>
+        <div id="step-2" class="step">
+            <input type="text" placeholder="Enter OTP" required id="otp">
+            <button id="verifyOtpBtn">Verify OTP</button>
+            <div id="timer"></div>
+        </div>
+        <div id="step-3" class="step">
+            <input type="password" id="newPass" placeholder="Enter Your New Password">
+            <button id="resetPassBtn">Reset Password</button>
+        </div>
+        <div id="msg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
